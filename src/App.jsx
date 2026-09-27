@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { ArrowRight, Mail, Phone, Download, TrendingUp, Database, Cpu, LineChart, Sparkles, Users, Clock, ArrowUpRight, Menu, X } from "lucide-react";
+import { Analytics } from '@vercel/analytics/react';
 
 const GithubIcon = (props) => (
   <svg viewBox="0 0 24 24" fill="currentColor" {...props}>
@@ -406,6 +407,7 @@ export default function Portfolio() {
       <footer className="py-8 px-6 text-center text-zinc-600 text-sm border-t border-zinc-800/60">
         © 2026 Priya Alagarsamy. Built with intention.
       </footer>
+      <Analytics />
     </div>
   );
 }
